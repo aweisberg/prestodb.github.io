@@ -11,6 +11,16 @@
     <meta property="og:title" content="Presto | Distributed SQL Query Engine for Big Data">
     <meta property="og:description" content="Distributed SQL Query Engine for Big Data">
     <meta property="og:image" content="static/presto-og.png">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82811140-44"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82811140-44');
+    </script>
+
 </head>
 <body>
 <div id="fb-root"></div>
@@ -27,13 +37,14 @@
     <nav class="width">
         <a href="."><h1>Presto</h1></a>
         <ul class="nav">
-            <li><a href="overview.html">Overview</a></li>
+            <li><a href="overview.html">About</a></li>
             <li><a href="https://prestodb.github.io/docs/current/">Docs</a></li>
             <li><a href="blog/index.html">Blog</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="resources.html">Resources</a></li>
-            <li><a href="https://github.com/prestodb/presto">GitHub</a>
+            <li><a href="join.html">Foundation</a>
+            <li><a href="https://github.com/prestodb/presto"><img height=20 src="./img/github.svg" alt="GitHub Octocat"></a>
         </ul>
     </nav>
 </header>
@@ -43,7 +54,7 @@
         <div class="leftcol">
             <h1>Distributed SQL Query Engine for&nbsp;Big&nbsp;Data</h1>
             <div>
-              <a class="button" href="overview.html">Get Started</a>
+              <a class="button" href="getting-started.html">Get Started</a>
               <a class="button" href="download.html">Download</a>
             </div>
         </div>
@@ -52,6 +63,22 @@
         </div>
     </div>
 </header>
+<div class="clearfix banner-wrap-signup">
+  <div class="banner-content">
+    <div class="banner-signup banner-info">
+        <h3><b>Join the Presto mailing list for the latest community updates</b> <a class="button" href="https://lists.prestodb.io/g/Community" target="_blank">Sign up</a></h3>
+    </div>
+  </div>
+</div>
+<div class="clearfix banner-wrap">
+  <div class="banner-content">
+    <div class="banner-info">
+      <div><img src="./img/prestoconday_logo-white.svg" alt="PrestoCon Day" class="banner-logo">
+            <h3><b><i>All Things PrestoDB</i></b></h3><p><b>March 24, 2021 | Free Virtual Experience</b></p></div>
+      <div class="btn"><a class="button" href="https://events.linuxfoundation.org/prestocon-day/" target="_blank" >More Info</a> <a class="button" href="https://www.cvent.com/d/2jq810/4W?ct=50221cf5-5496-4c34-9ec0-3b52b1bf1204&_ga=2.181093029.386934818.1611860371-265920046.1609888998" target="_blank" >Free Registration</a></div>    </div>
+  </div>
+</div>
+
 
 <div class="content homecontent width clearfix">
     <div class="leftcol widecol">
@@ -71,12 +98,19 @@
         </p>
 
         <p>
-             The community owned and driven Presto project is supported by the
-             Presto Foundation, an independent nonprofit organization
-             with open and neutral governance, hosted under the
-             <a href="https://www.linuxfoundation.org/">Linux Foundation®</a>.
-             Learn more about the Presto Foundation on the
-             <a href="https://www.linuxfoundation.org/uncategorized/2019/09/facebook-uber-twitter-and-alibaba-form-presto-foundation-to-tackle-distributed-data-processing-at-scale/">Linux Foundation's website</a>.
+            The community owned and driven Presto project is supported by the
+            <a href="./join.html">Presto Foundation</a>, an independent
+            nonprofit organization with open and neutral governance, hosted
+            under the <a href="https://www.linuxfoundation.org/">Linux
+            Foundation®</a>.
+        </p>
+
+        <p>
+            Learn more about the Presto's
+            <a href="https://www.linuxfoundation.org/uncategorized/2019/09/facebook-uber-twitter-and-alibaba-form-presto-foundation-to-tackle-distributed-data-processing-at-scale/">move
+            to the Linux Foundation</a>, and learn how to
+            <a href="./join.html">become a member of the Presto Foundation
+            today</a>.
         </p>
 
         <h2>What can it do?</h2>
@@ -130,6 +164,30 @@
             </p>
             <small>Fred Wulff, Software Engineer, Dropbox</small>
         </blockquote>
+
+        <h2>What are the latest innovations?</h2>
+
+        <p><b>Project Aria</b> – PrestoDB can now push down entire expressions to the data source for some file formats like ORC. <a href="https://prestodb.io/blog/2019/12/23/improve-presto-planner">Blog</a> <a href="https://engineering.fb.com/data-infrastructure/aria-presto/" target="_blank">Design</a></p>
+        <p><b>Project Presto Unlimited</b> – Introduced exchange materialization to create temporary in-memory bucketed tables to use significantly less memory. <a href="https://github.com/prestodb/presto/issues/12124" target="_blank">PR</a> <a href="https://prestodb.io/blog/2019/08/05/presto-unlimited-mpp-database-at-scale" target="_blank">Blog</a></p>
+        <p><b>User Defined Functions</b> – Support for dynamic SQL functions is now available in experimental mode. <a href="https://prestodb.io/docs/current/admin/function-namespace-managers.html" >Docs</a></p>
+        <p><b>Apache Pinot and Druid Connectors</b> – <a href="https://prestodb.io/docs/current/connector.html">Docs</a></p>
+        <p><b>RaptorX</b> – Disaggregates the storage from compute for low latency to provide a unified, cheap, fast, and scalable solution to OLAP and interactive use cases. <a href="https://github.com/prestodb/presto/issues/13205" target="_blank">Issue</a></p>
+        <p><b>Presto-on-Spark</b> Runs Presto code as a library within Spark executor. <a href="http://tinyurl.com/presto-on-spark-design" target="_blank">Design</a> <a href="https://prestodb.io/docs/current/installation/spark.html" >Docs</a></p>
+        <p><b>Disaggregated Coordinator (a.k.a. Fireball)</b> – Scale out the coordinator horizontally and revamp the RPC stack. Beta in Q4 2020. <a href="https://github.com/prestodb/presto/issues/10174" target="_blank">Issues</a></p>
+
+
+        <h2>What is the Presto Foundation?</h2>
+
+        <p>
+            The Presto Foundation is the non-profit established to support the
+            developer and community processes for the Presto open source
+            project. Hosted under the auspices of <a href="https://linuxfoundation.org">the Linux Foundation</a>,
+            the Presto Foundation is governed openly and transparently.
+        </p>
+        <p>
+            If you share our vision for Presto and are ready to provide
+            financial support for the community development process, please
+            <a href="/join.html">join us!</a>
     </div>
 
     <div class="rightcol">
@@ -165,11 +223,16 @@
       </script>
       <h3>Community</h3>
         <ul>
-            <li><a href="https://groups.google.com/group/presto-users">presto-users group</a></li>
+            <li><a href="https://lists.prestodb.io/g/Community">Presto mailing list</a></li>
             <li><a href="https://github.com/prestodb/presto/issues">Report an issue</a></li>
             <li><a href="https://join.slack.com/t/prestodb/shared_invite/enQtNTQ3NjU2MTYyNDA2LTYyOTg3MzUyMWE1YTI3Njc5YjgxZjNiYTgxODAzYjI5YWMwYWE0MTZjYWFhNGMwNjczYjI3N2JhM2ExMGJlMWM">Slack</a></li>
+	    <li><a href="https://prestodb.io/community.html#meetup-groups">Virtual Meetup Groups</a></li>
+	    <li><a href="https://www.linkedin.com/company/presto-foundation/">LinkedIn</a></li>
             <li><a href="https://www.facebook.com/prestodb">Facebook</a> <div class="fb-like" data-href="https://www.facebook.com/prestodb" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></li>
             <li><a href="https://twitter.com/prestodb">Twitter</a></li>
+            <li><a href="https://groups.google.com/group/presto-users">presto-users google mailing list</a></li>
+            <li><a href="join">Join the Presto Foundation</a></li>
+
         </ul>
 
         <h3>License</h3>
@@ -180,7 +243,16 @@
     </div>
 </div>
 
-<div class="footer">&copy; Copyright 2013-2019, Presto Foundation</div>
+<div class="footer width">
+<section className="copyright">
+Copyright &copy; The Presto Foundation.<br>
+All rights reserved. Presto is a registered trademark of LF Projects, LLC. <br>Please see our <a
+href="https://lfprojects.org/policies/trademark-policy/">Trademark Policy</a> for more
+information.<br>
+<a href="https://lfprojects.org/policies/privacy-policy/">Privacy Policy</a> |
+<a href="https://lfprojects.org/policies/terms-of-use/">Terms of Use</a>.
+</section>
+</div>
 
 </body>
 </html>

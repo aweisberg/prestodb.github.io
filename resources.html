@@ -10,6 +10,16 @@
     <meta property="og:title" content="Presto | Resources">
     <meta property="og:description" content="Distributed SQL Query Engine for Big Data">
     <meta property="og:image" content="static/presto-og.png">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82811140-44"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82811140-44');
+    </script>
+
 </head>
 <body>
 
@@ -17,18 +27,19 @@
     <nav class="width">
         <a href="."><h1>Presto</h1></a>
         <ul class="nav">
-            <li><a href="overview.html">Overview</a></li>
+            <li><a href="overview.html">About</a></li>
             <li><a href="https://prestodb.github.io/docs/current/">Docs</a></li>
             <li><a href="blog/index.html">Blog</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="resources.html">Resources</a></li>
-            <li><a href="https://github.com/prestodb/presto">GitHub</a>
+            <li><a href="join.html">Foundation</a>
+            <li><a href="https://github.com/prestodb/presto"><img height=20 src="./img/github.svg" alt="GitHub Octocat"></a>
         </ul>
     </nav>
 </header>
 
-<header class="hero clearfix">
+<header class="hero clearfix">c
     <div class="width">
         <h1>Resources</h1>
     </div>
@@ -37,7 +48,22 @@
 <div class="content homecontent width clearfix">
     <div class="leftcol widecol faq">
 
-        <h2 id="tools">Presto Management Tools</h2>
+<h2 id="tutorials">Tutorials</h2>
+        <div class="item">
+            <h4>PrestoDB Sandbox on AWS</h4>
+            <dl>
+                <dt>Website</dt>
+                <dd><a href="https://aws.amazon.com/marketplace/pp/B08C21CGF6?ref_=srh_res_product_title" target="_blank">PrestoDB Sandbox AMI</a></dd>
+                <dt>Maintained by</dt>
+                <dd><a href="https://ahana.io/" target="_blank">Ahana</a></dd>
+                <dt>Description</dt>
+                <dd>
+		 Learn free open source Presto. Sandbox comes bundled with catalogs to try, test, and prototype Presto. See the 5 min tutorial on how to get started at <a href="https://ahana.io/tutorials/aws-sandbox/" target="_blank">https://ahana.io/tutorials/aws-sandbox/</a>                
+		</dd>
+            </dl>
+        </div>
+
+<h2 id="tools">Presto Management Tools</h2>
 
         <div class="item">
             <h4>Presto-Admin</h4>
@@ -410,6 +436,24 @@ try (Connection connection =
         <h3 id="aws">AWS</h3>
 
         <div class="item">
+            <h4>Presto Cloud</h4>
+            <dl>
+                <dt>Website</dt>
+                <dd><a href="https://ahana.io/" target="_blank">Ahana</a></dd>
+                <dt>Maintainer</dt>
+                <dd><a href="https://ahana.io/" target="_blank">Ahana</a></dd>
+                <dd>
+                    <p>
+                        Ahana Cloud for Presto is the first cloud-native managed service for Presto. This offering is designed to simplify the deployment, management and integration of Presto, with data catalogs, databases and data lakes on Amazon Web Services (AWS). <a href="https://ahana.io/ahana-cloud/" target="_blank">Ahana Cloud for Presto</a> is easy-to-use with no installation, no AMIs or CFTs, and no configuration needed. Via the Ahana console, Presto is deployed within the user’s AWS account, giving users complete control and visibility of clusters and their data. As a managed service, there is no infrastructure to manage, yet you can pay only for Ahana and the EC2 instances that you use. 
+                    <p/>
+                    <p>
+                        Ahana Cloud simplifies Presto. It comes out-of-the-box integrated with built-in catalogs, data sources, and dashboarding tools. Under the hood, Ahana leverages the latest version of Presto and runs with Amazon EKS for high scalability, availability, and manageability.
+                    </p>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="item">
             <h4>Amazon Athena</h4>
             <dl>
                 <dt>Website</dt>
@@ -458,22 +502,49 @@ try (Connection connection =
                </dd>
            </dl>
        </div>
+
+
+
+
+
+
+
     </div>
 
     <div class="rightcol">
-    <h3>Presto Resources</h3>
+<h3>Community Contributed Content</h3>
+    <ul>
+        <li><a href="#tutorials">Tutorials</a></li>
+
+    </ul>
+    <h3>Community Contributed Tools</h3>
     <ul>
         <li><a href="#tools">Presto Management Tools</a></li>
         <li><a href="#clients">Presto Clients</a></li>
         <li><a href="#odbc">Presto ODBC</a></li>
         <li><a href="#libraries">Presto Libraries</a></li>
         <li><a href="#connectors">Presto Connectors</a></li>
-        <li><a href="#cloud">Presto Cloud (AWS)</a></li>
+   
+    </ul>
+
+<h3>Presto Support & Services</h3>
+    <ul>
+ 	 <li><a href="#cloud">Presto Cloud</a></li>
+   
     </ul>
 </div>
 </div>
 
-<div class="footer">&copy; Copyright 2013-2019, Presto Foundation</div>
+<div class="footer width">
+<section className="copyright">
+Copyright &copy; The Presto Foundation.<br>
+All rights reserved. Presto is a registered trademark of LF Projects, LLC. <br>Please see our <a
+href="https://lfprojects.org/policies/trademark-policy/">Trademark Policy</a> for more
+information.<br>
+<a href="https://lfprojects.org/policies/privacy-policy/">Privacy Policy</a> |
+<a href="https://lfprojects.org/policies/terms-of-use/">Terms of Use</a>.
+</section>
+</div>
 
 </body>
 </html>
